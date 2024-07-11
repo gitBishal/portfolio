@@ -311,6 +311,12 @@ img {
 .skills__devops {
   width: 40%;
 }
+.skills__testing {
+  width: 40%;
+}
+.skills__blazor {
+  width: 40%;
+}
 .skills__img {
   border-radius: 0.5rem;
 }
