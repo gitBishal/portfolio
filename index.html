@@ -1,231 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bishal Poudel — Senior Software Developer specializing in .NET, Azure, and compliant fintech systems.">
+    <title>Bishal Poudel — Senior Software Developer</title>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-        <link rel="icon" href="assets/img/favicon.ico">
-    <title>
-        Bishal Poudel
-    </title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Bishal Poudel</a>
-                </div>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <!-- <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
-                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
-                    </ul>
-                </div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Bishal</span><br> Software Engineer</h1>
+    <!--===== HEADER =====-->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#home" class="nav__logo">Bishal<span class="dot">.</span>Poudel</a>
 
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/bishal-poudel-2a0bb6189/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/gitBishal/" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="mailto:poudelbisal@gmail.com" class="home__social-icon"><i class='bx bx-envelope' ></i></a>
-
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/about.jpg"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I am Bishal</h2>
-                        <p class="about__text">Hello! I'm Bishal Poudel, a passionate and dedicated Software Engineer with a focus on .NET development. With over 4 years of experience in designing, building, and maintaining robust and scalable software solutions, I thrive on turning complex problems into innovative and efficient applications.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">My journey in software development began with a fascination for technology and problem-solving. Over the years, I have honed my skills in the .NET ecosystem, mastering technologies such as ASP.NET, C#, Entity Framework, and Azure. My expertise extends to both frontend and backend development, enabling me to create comprehensive, full-stack solutions.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-csharp skills__icon'></i> -->
-                                <span class="skills__name">C#</span>
-                            </div>
-                            <div class="skills__bar skills__csharp">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-css3 skills__icon'></i> -->
-                                <span class="skills__name">.NET Framework/Core</span>
-                            </div>
-                            <div class="skills__bar skills__dotnetcore">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-csharp skills__icon'></i> -->
-                                <span class="skills__name">SQL</span>
-                            </div>
-                            <div class="skills__bar skills__sql">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-C# skills__icon' ></i> -->
-                                <span class="skills__name">Entity Framework</span>
-                            </div>
-                            <div class="skills__bar skills__entityframework">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxs-paint skills__icon'></i> -->
-                                <span class="skills__name">Azure Cloud Services</span>
-                            </div>
-                            <div class="skills__bar skills__azure">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxs-javascript skills__icon'></i> -->
-                                <span class="skills__name">JavaScript</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxs-paint skills__icon'></i> -->
-                                <span class="skills__name">DevOps</span>
-                            </div>
-                            <div class="skills__bar skills__devops">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxs-paint skills__icon'></i> -->
-                                <span class="skills__name">Unit Testing</span>
-                            </div>
-                            <div class="skills__bar skills__testing">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxs-paint skills__icon'></i> -->
-                                <span class="skills__name">Blazor</span>
-                            </div>
-                            <div class="skills__bar skills__blazor">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-           
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Bishal</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/bishal-poudel-2a0bb6189/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/gitBishal/" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                <a href="mailto:poudelbisal@gmail.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link" data-nav>Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" data-nav>About</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link" data-nav>Experience</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" data-nav>Skills</a></li>
+                    <li class="nav__item"><a href="#expertise" class="nav__link" data-nav>Expertise</a></li>
+                    <li class="nav__item nav__item--cta"><a href="#contact" class="nav__link nav__link--cta" data-nav>Contact</a></li>
+                </ul>
             </div>
-            <p class="footer__copy">&#169; Bishal. All rigths reserved</p>
-        </footer>
 
+            <div class="nav__actions">
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <main id="main">
+        <!--===== HERO =====-->
+        <section class="hero" id="home">
+            <div class="hero__grid" aria-hidden="true"></div>
+            <div class="aurora aurora--one" aria-hidden="true"></div>
+            <div class="aurora aurora--two" aria-hidden="true"></div>
+            <div class="aurora aurora--three" aria-hidden="true"></div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="container hero__container">
+                <p class="eyebrow reveal">
+                    <span class="eyebrow__pulse"></span>
+                    Available for select fintech &amp; platform engineering work
+                </p>
+
+                <h1 class="hero__title reveal">
+                    Senior software engineer<br>
+                    building systems where <span class="text-gradient">money moves</span><br>
+                    and <span class="text-gradient">data can't drift.</span>
+                </h1>
+
+                <p class="hero__lede reveal">
+                    I'm Bishal Poudel — a .NET &amp; Azure engineer with 6+ years running backend systems for
+                    fintech and healthcare, where accuracy and uptime aren't negotiable. Currently building the
+                    remittance stack at Smartpay in Nicosia, Cyprus.
+                </p>
+
+                <div class="hero__actions reveal">
+                    <a href="#experience" class="button button--primary">
+                        <span>View experience</span><i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <a href="#contact" class="button button--ghost">
+                        <span>Get in touch</span>
+                    </a>
+                </div>
+
+                <div class="hero__social reveal">
+                    <a href="https://www.linkedin.com/in/bishal-poudel-2a0bb6189/" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/gitBishal/" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:poudelbisal@gmail.com" class="social-icon" aria-label="Email"><i class='bx bx-envelope'></i></a>
+                    <span class="hero__location"><i class='bx bx-map'></i> Nicosia, Cyprus</span>
+                </div>
+            </div>
+
+            <div class="scroll-cue reveal" aria-hidden="true">
+                <span>Scroll</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </section>
+
+        <!--===== STATS STRIP =====-->
+        <section class="stats" aria-label="Career highlights">
+            <div class="container stats__grid">
+                <div class="stat reveal">
+                    <span class="stat__value" data-count="6" data-suffix="+">0</span>
+                    <span class="stat__label">Years in software engineering</span>
+                </div>
+                <div class="stat reveal">
+                    <span class="stat__value" data-count="1700" data-suffix="+">0</span>
+                    <span class="stat__label">Transactions processed daily</span>
+                </div>
+                <div class="stat reveal">
+                    <span class="stat__value" data-count="9">0</span>
+                    <span class="stat__label">Person team led at Inficare</span>
+                </div>
+                <div class="stat reveal">
+                    <span class="stat__value" data-count="3">0</span>
+                    <span class="stat__label">Compliance frameworks shipped under</span>
+                </div>
+            </div>
+        </section>
+
+        <!--===== TECH MARQUEE =====-->
+        <section class="marquee" aria-label="Technologies I work with">
+            <div class="marquee__fade marquee__fade--left" aria-hidden="true"></div>
+            <div class="marquee__fade marquee__fade--right" aria-hidden="true"></div>
+            <div class="marquee__track">
+                <ul class="marquee__list">
+                    <li><i class='bx bxl-c-plus-plus'></i>C#</li>
+                    <li><i class='bx bx-server'></i>.NET Core / Framework</li>
+                    <li><i class='bx bxl-microsoft'></i>Microsoft Azure</li>
+                    <li><i class='bx bx-mobile-alt'></i>.NET MAUI</li>
+                    <li><i class='bx bx-data'></i>Entity Framework · Dapper</li>
+                    <li><i class='bx bx-credit-card'></i>Shift4</li>
+                    <li><i class='bx bx-bank'></i>Plaid</li>
+                    <li><i class='bx bxl-angular'></i>Angular</li>
+                    <li><i class='bx bx-cloud'></i>Azure DevOps · CI/CD</li>
+                    <li><i class='bx bx-shield-quarter'></i>ISO 27001 · PDPA · MAS</li>
+                </ul>
+                <ul class="marquee__list" aria-hidden="true">
+                    <li><i class='bx bxl-c-plus-plus'></i>C#</li>
+                    <li><i class='bx bx-server'></i>.NET Core / Framework</li>
+                    <li><i class='bx bxl-microsoft'></i>Microsoft Azure</li>
+                    <li><i class='bx bx-mobile-alt'></i>.NET MAUI</li>
+                    <li><i class='bx bx-data'></i>Entity Framework · Dapper</li>
+                    <li><i class='bx bx-credit-card'></i>Shift4</li>
+                    <li><i class='bx bx-bank'></i>Plaid</li>
+                    <li><i class='bx bxl-angular'></i>Angular</li>
+                    <li><i class='bx bx-cloud'></i>Azure DevOps · CI/CD</li>
+                    <li><i class='bx bx-shield-quarter'></i>ISO 27001 · PDPA · MAS</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="section about" id="about">
+            <div class="container">
+                <p class="section__eyebrow reveal">About</p>
+                <h2 class="section__title reveal">Six years of keeping money moving, on time and on record.</h2>
+
+                <div class="about__layout">
+                    <div class="about__portrait reveal">
+                        <div class="about__portrait-frame">
+                            <img src="assets/img/about.jpg" alt="Portrait of Bishal Poudel">
+                        </div>
+                        <div class="about__portrait-glow" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="about__content">
+                        <p class="about__text reveal">
+                            Hello, I'm Bishal — a senior .NET developer who's spent the last six years building
+                            and running backend systems in fintech and healthcare. At Inficare I owned the full
+                            delivery lifecycle for a remittance platform processing 1,700+ transactions a day:
+                            architecture decisions, Azure infrastructure across three environments, disaster
+                            recovery planning, and leading a 9-person cross-functional team.
+                        </p>
+                        <p class="about__text reveal">
+                            I'm equally comfortable on the compliance side — ISO 27001, PDPA, and MAS aren't
+                            just checkboxes to me, I've shipped production software under all three. Currently
+                            at Smartpay in Cyprus, I work across the full remittance stack: the web-based agent
+                            network, a .NET MAUI mobile app, and new online channels, with Shift4 card processing
+                            and Plaid open banking woven through the mobile client.
+                        </p>
+
+                        <div class="about__facts reveal">
+                            <div class="fact">
+                                <i class='bx bx-briefcase'></i>
+                                <div>
+                                    <span class="fact__label">Currently</span>
+                                    <span class="fact__value">Senior Software Developer, Smartpay</span>
+                                </div>
+                            </div>
+                            <div class="fact">
+                                <i class='bx bx-map-pin'></i>
+                                <div>
+                                    <span class="fact__label">Based in</span>
+                                    <span class="fact__value">Nicosia, Cyprus</span>
+                                </div>
+                            </div>
+                            <div class="fact">
+                                <i class='bx bx-target-lock'></i>
+                                <div>
+                                    <span class="fact__label">Focus</span>
+                                    <span class="fact__value">.NET · Azure · Compliant fintech systems</span>
+                                </div>
+                            </div>
+                            <div class="fact">
+                                <i class='bx bx-certification'></i>
+                                <div>
+                                    <span class="fact__label">Certified</span>
+                                    <span class="fact__value">ISO/IEC 27001 Lead Auditor (training)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== EXPERIENCE =====-->
+        <section class="section experience" id="experience">
+            <div class="container">
+                <p class="section__eyebrow reveal">Experience</p>
+                <h2 class="section__title reveal">Where the work happened.</h2>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__head">
+                                <div>
+                                    <h3 class="timeline__role">Senior Software Developer</h3>
+                                    <p class="timeline__org">SPSPI Smart Pay Services Payment Institution (Cyprus) Ltd.</p>
+                                </div>
+                                <span class="timeline__date">May 2025 — Present</span>
+                            </div>
+                            <p class="timeline__place"><i class='bx bx-map'></i>Nicosia, Cyprus</p>
+                            <ul class="timeline__list">
+                                <li>Reviewing and improving an existing remittance platform — identifying bottlenecks, refactoring legacy code, and introducing new integrations.</li>
+                                <li>Leading the expansion from a physical agent network to online channels, reworking core flows for direct consumer transactions over web and mobile.</li>
+                                <li>Building and maintaining a cross-platform remittance mobile app in .NET MAUI, covering onboarding through transaction history.</li>
+                                <li>Integrated Shift4 for card processing — payment flows, tokenisation, and webhook-based notifications.</li>
+                                <li>Integrated Plaid for open banking, enabling bank-linked transfers directly in the remittance workflow.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__head">
+                                <div>
+                                    <h3 class="timeline__role">Senior Software Developer</h3>
+                                    <p class="timeline__org">Inficare Pvt. Ltd.</p>
+                                </div>
+                                <span class="timeline__date">Jan 2025 — Mar 2025</span>
+                            </div>
+                            <p class="timeline__place"><i class='bx bx-map'></i>Kathmandu, Nepal</p>
+                            <ul class="timeline__list">
+                                <li>Brought the remittance platform into full compliance with MAS, PDPA, and ISO 27001 — data handling policies, audit logging, access controls.</li>
+                                <li>Led a cross-functional team of 9 — developers, QA, and a PM — running standups, sprint reviews, and code reviews.</li>
+                                <li>Owned three environments with a full DR setup on production — Azure Front Door handled regional failover, keeping RTO under 3 hours.</li>
+                                <li>Enforced deployment freezes around peak transaction periods, scheduling two releases a month around them.</li>
+                                <li>Standardised Azure security practices across the team — Key Vault, RBAC, network isolation.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__head">
+                                <div>
+                                    <h3 class="timeline__role">Associate Senior Software Developer</h3>
+                                    <p class="timeline__org">Inficare Pvt. Ltd.</p>
+                                </div>
+                                <span class="timeline__date">Jun 2024 — Jan 2025</span>
+                            </div>
+                            <p class="timeline__place"><i class='bx bx-map'></i>Kathmandu, Nepal</p>
+                            <ul class="timeline__list">
+                                <li>Architected .NET applications on Azure — App Services, Function Apps, and Service Bus for reliable async processing.</li>
+                                <li>Built observability from the ground up: Application Insights, Azure Monitor dashboards, Log Analytics — cutting mean time to detect issues.</li>
+                                <li>Owned CI/CD pipelines in Azure DevOps, reducing deployment time and manual steps.</li>
+                                <li>Profiled slow queries and code paths, applying targeted fixes that measurably improved response times.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__head">
+                                <div>
+                                    <h3 class="timeline__role">Software Developer</h3>
+                                    <p class="timeline__org">Inficare Pvt. Ltd.</p>
+                                </div>
+                                <span class="timeline__date">Jul 2020 — Jun 2024</span>
+                            </div>
+                            <p class="timeline__place"><i class='bx bx-map'></i>Kathmandu, Nepal</p>
+                            <ul class="timeline__list">
+                                <li>Built and maintained REST APIs in C#/ASP.NET for a multi-currency remittance platform processing 1,700+ transactions daily.</li>
+                                <li>Integrated third-party payment APIs and banking connectors, including retries, reconciliation, and edge-case handling.</li>
+                                <li>Managed Azure deployments (Key Vault, Front Door, Azure SQL) with a focus on security and uptime.</li>
+                                <li>Active across Agile ceremonies with a team of 8+ developers.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__head">
+                                <div>
+                                    <h3 class="timeline__role">Software Developer</h3>
+                                    <p class="timeline__org">Clinis Pvt. Ltd.</p>
+                                </div>
+                                <span class="timeline__date">Feb 2019 — Jan 2020</span>
+                            </div>
+                            <p class="timeline__place"><i class='bx bx-map'></i>Kathmandu, Nepal</p>
+                            <ul class="timeline__list">
+                                <li>Wrote and optimised SQL Server queries, stored procedures, and triggers for a patient management system used across multiple hospital sites.</li>
+                                <li>Built REST APIs in .NET connected to an Angular frontend — authentication, validation, and error handling end to end.</li>
+                                <li>Automated recurring admin workflows with Windows Services and scheduled tasks, cutting manual effort for clinical staff.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker timeline__marker--muted"></div>
+                        <div class="timeline__card timeline__card--muted">
+                            <div class="timeline__head">
+                                <div>
+                                    <h3 class="timeline__role">Freelance — UN IT Consultancy</h3>
+                                    <p class="timeline__org">Climate Change Adaptation Division, Nepal Ministry of Forests and Environment</p>
+                                </div>
+                            </div>
+                            <ul class="timeline__list">
+                                <li>Built a monitoring and reporting system delivered under a UN IT consultancy contract.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <p class="section__eyebrow reveal">Skills</p>
+                <h2 class="section__title reveal">The stack behind the systems.</h2>
+
+                <div class="bento reveal">
+                    <div class="bento__card bento__card--wide spotlight-card">
+                        <div class="bento__icon"><i class='bx bx-server'></i></div>
+                        <h3>.NET Ecosystem</h3>
+                        <p>.NET Core (2.2+), .NET Framework (4.5+), ASP.NET Web API, .NET MAUI, Entity Framework, Dapper</p>
+                        <div class="tag-row">
+                            <span class="tag">.NET Core</span><span class="tag">ASP.NET Web API</span>
+                            <span class="tag">.NET MAUI</span><span class="tag">Entity Framework</span><span class="tag">Dapper</span>
+                        </div>
+                    </div>
+
+                    <div class="bento__card bento__card--wide spotlight-card">
+                        <div class="bento__icon"><i class='bx bxl-microsoft'></i></div>
+                        <h3>Cloud &amp; DevOps</h3>
+                        <p>Microsoft Azure end to end — App Services, Function Apps, Service Bus, SQL Database, Blob Storage, Key Vault, Front Door, Application Insights, Azure DevOps, CI/CD pipelines.</p>
+                        <div class="tag-row">
+                            <span class="tag">Azure</span><span class="tag">Key Vault</span><span class="tag">Front Door</span>
+                            <span class="tag">Service Bus</span><span class="tag">Azure DevOps</span>
+                        </div>
+                    </div>
+
+                    <div class="bento__card spotlight-card">
+                        <div class="bento__icon"><i class='bx bx-code-alt'></i></div>
+                        <h3>Languages</h3>
+                        <p>C#, JavaScript, TypeScript</p>
+                    </div>
+
+                    <div class="bento__card spotlight-card">
+                        <div class="bento__icon"><i class='bx bx-mobile-alt'></i></div>
+                        <h3>Mobile</h3>
+                        <p>.NET MAUI — cross-platform iOS &amp; Android</p>
+                    </div>
+
+                    <div class="bento__card spotlight-card">
+                        <div class="bento__icon"><i class='bx bx-credit-card'></i></div>
+                        <h3>Payments &amp; Banking</h3>
+                        <p>Shift4 card processing, Plaid open banking</p>
+                    </div>
+
+                    <div class="bento__card spotlight-card">
+                        <div class="bento__icon"><i class='bxl bxl-angular'></i></div>
+                        <h3>Frontend</h3>
+                        <p>Angular, HTML, CSS, Bootstrap, jQuery</p>
+                    </div>
+
+                    <div class="bento__card spotlight-card">
+                        <div class="bento__icon"><i class='bx bx-data'></i></div>
+                        <h3>Databases</h3>
+                        <p>MSSQL Server — query optimisation, stored procedures, indexing</p>
+                    </div>
+
+                    <div class="bento__card spotlight-card">
+                        <div class="bento__icon"><i class='bx bx-shield-quarter'></i></div>
+                        <h3>Compliance</h3>
+                        <p>ISO 27001, PDPA, MAS regulatory frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== DOMAIN EXPERTISE =====-->
+        <section class="section expertise" id="expertise">
+            <div class="container">
+                <p class="section__eyebrow reveal">Domain expertise</p>
+                <h2 class="section__title reveal">Systems where getting it wrong isn't an option.</h2>
+
+                <div class="expertise__grid">
+                    <div class="expertise__card reveal">
+                        <div class="expertise__icon"><i class='bx bx-transfer-alt'></i></div>
+                        <h3>Fintech &amp; Remittance</h3>
+                        <p>Compliant remittance software with payment gateway integrations (Shift4, Plaid), banking APIs, real-time transaction processing, and regulatory reporting — plus the operational realities of real-time money movement: reconciliation, failure handling, audit trails.</p>
+                    </div>
+                    <div class="expertise__card reveal">
+                        <div class="expertise__icon"><i class='bx bx-plus-medical'></i></div>
+                        <h3>Healthcare Systems</h3>
+                        <p>Patient data management systems for clinical environments, built around high data accuracy requirements, strict access controls, and workflow automation.</p>
+                    </div>
+                    <div class="expertise__card reveal">
+                        <div class="expertise__icon"><i class='bx bx-group'></i></div>
+                        <h3>Civic &amp; Community Platforms</h3>
+                        <p>A membership registration and approval portal for the Non-Resident Nepali Association (NRNA) — role-based access control, email notifications, and an admin approval workflow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CREDENTIALS: CERTS, AWARDS, EDUCATION =====-->
+        <section class="section credentials">
+            <div class="container">
+                <div class="credentials__grid">
+                    <div class="credentials__col reveal">
+                        <h3 class="credentials__title"><i class='bx bx-certification'></i>Certifications &amp; Awards</h3>
+                        <ul class="credentials__list">
+                            <li>
+                                <span class="credentials__name">ISO/IEC 27001 Information Security Lead Auditor</span>
+                                <span class="credentials__meta">Certificate of Attendance</span>
+                            </li>
+                            <li>
+                                <span class="credentials__name">Standout Performer, 2021</span>
+                                <span class="credentials__meta">Inficare Pvt. Ltd.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="credentials__col reveal">
+                        <h3 class="credentials__title"><i class='bx bx-book-open'></i>Education</h3>
+                        <ul class="credentials__list">
+                            <li>
+                                <span class="credentials__name">Bachelor of Computer Engineering</span>
+                                <span class="credentials__meta">Advanced College of Engineering and Management · IOE, Tribhuvan University · 2014–2018</span>
+                            </li>
+                            <li>
+                                <span class="credentials__name">Higher Secondary Education</span>
+                                <span class="credentials__meta">Morgan International College · HSEB · 2012–2014</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact__card">
+                    <div class="aurora aurora--contact" aria-hidden="true"></div>
+                    <p class="section__eyebrow reveal">Contact</p>
+                    <h2 class="contact__title reveal">Let's build something that has to work.</h2>
+                    <p class="contact__lede reveal">
+                        Open to senior backend, platform, and fintech engineering roles. The fastest way to
+                        reach me is email — I'll get back to you promptly.
+                    </p>
+
+                    <div class="contact__actions reveal">
+                        <a href="mailto:poudelbisal@gmail.com" class="button button--primary button--lg">
+                            <i class='bx bx-envelope'></i><span>poudelbisal@gmail.com</span>
+                        </a>
+                        <button class="button button--ghost button--lg" id="copy-email" type="button" data-email="poudelbisal@gmail.com">
+                            <i class='bx bx-copy'></i><span>Copy email</span>
+                        </button>
+                    </div>
+
+                    <div class="contact__social reveal">
+                        <a href="https://www.linkedin.com/in/bishal-poudel-2a0bb6189/" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                        <a href="https://github.com/gitBishal/" target="_blank" rel="noopener"><i class='bx bxl-github'></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <p class="footer__brand">Bishal Poudel</p>
+            <p class="footer__copy">&copy; <span id="year"></span> Bishal Poudel. Built with care in Nicosia.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
